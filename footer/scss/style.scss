@@ -1,0 +1,133 @@
+
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$font-family-sans-serif-2: 'Poppins', sans-serif;
+$font-family-serif: 'Source Serif Pro', serif;
+
+
+
+body {
+	font-family: $font-family-sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-family-sans-serif;
+}
+a {
+	transition: .3s all ease;
+	&, &:hover {
+		text-decoration: none!important;
+	}
+}
+.content {
+	height: 70vh;
+}
+
+// footer 3
+.footer-59391 {
+	border-top: 1px solid #efefef;
+	background-color: $white;
+	font-family: $font-family-sans-serif-2;
+	padding: 4rem 0;
+	.site-logo {
+		color: $white;
+		
+		a {
+			font-size: 30px;	
+			color: $black;
+			font-weight: 900;
+		}
+	}
+
+	.social-icons {
+		li {
+			display: inline-block;
+			a {
+				display: inline-block;
+				position: relative;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				&.dr {
+					background: #ff2e6e;
+				}
+				&.be {
+					background: #394cff;
+				}
+				&.tw {
+					background: #00a0fb;  
+				}
+				&.in {
+					background: #c31574;
+				}
+				&.fb {
+					background: #3b579b;
+				}
+				&.yt {
+					background: #fa2614;
+				}
+				
+				span {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					color: $white;
+				}
+			}
+		}
+	}
+	.nav-links {
+		li {
+			display: inline-block;
+			a {
+				font-size: 14px;
+				color: #777;
+				padding: 10px;
+			}
+		}
+		&.nav-left {
+			li {
+				&:first-child {
+					a {
+						// padding-left: 0;
+						@include media-breakpoint-down(lg) {
+							padding-left: 0;
+							// border: 1px solid red;
+						}
+					}
+				}
+			}
+		}
+		&.nav-right {
+			li {
+				&:last-child {
+					a {
+						padding-right: 0;
+					}
+				}
+			}
+			li {
+				&:first-child {
+					
+					a {
+						@include media-breakpoint-down(lg) {
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.copyright {
+		border-top: 1px solid #efefef;
+		padding-top: 50px;
+		text-align: center;
+		color: #777;
+	}
+}
+
+
