@@ -1,0 +1,295 @@
+
+
+body {
+    font-family: sans-serif;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    overflow-x: hidden;
+  }
+
+.container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.timerclock{
+    width: 40vw;
+    height: 80vh;
+    margin: 0vw 5vw 0vw 5vw;
+    background-color: white;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.timerclockbox{
+    width: 22vw;
+    height: 22vw;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    border: 20px solid rgb(16, 177, 16);
+}
+.statusLogo{
+  width: 8vw;
+  height: 8vw;
+  /* background-color: aquamarine; */
+}
+.blank{
+  width: 5px;
+  height: 20px;
+  background-color: white;
+}
+.time{
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.timerfont{
+  font-size: 4vw;
+  display: none; 
+}
+.timeSize{
+  background-color: white;
+  width: 5vw;
+  height: 4.1vw;
+}
+.editTextArea{
+  position: absolute;
+  width: 17.5vw;
+  height: 11vw;
+  /* display: none; */
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-flow: column;
+  /* padding: 20px; */
+  justify-content: space-around;
+  align-items: center;
+}
+.timeSetBox{
+  width: 17.5vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.counterInput{
+  width: 3vw;
+  margin: 0px 0.3vw;
+  position: relative;
+
+}
+.spacer{
+  color: black;
+  font-size: 3vw;
+}
+.eventName{
+  /* position: absolute; */
+  width: 16vw;
+  height: 3vw;
+  /* top: 4vw; */
+}
+input[type=text] {
+  display: inline-block;
+  text-align: right;
+  width: 3vw;
+  height: 3vw;
+  padding: 1px 1px;
+  font-size: 2vw;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+input[placeholder="Event Name"] {
+  width: 16vw;
+  height: 3vw;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=text] {
+  -moz-appearance: textfield;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+.buttons{
+  width: 30vw;
+  height: 100px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttomShape{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttomShape:hover{
+  cursor: pointer;
+}
+.start{
+  width: 100px;
+  height: 100px;
+  background-image: url('image/play.png');
+  background-size: cover;
+  border-radius: 50%;
+}
+.reset{
+  width: 100px;
+  height: 100px;
+  background-image: url('image/restart.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+
+.list{
+  width: 40vw;
+  height: 80vh;
+  margin: 0vw 5vw 0vw 5vw;
+  background-color: rgba(26, 131, 73, 0.068);
+  border: 1px solid rgba(209, 209, 209, 0.719);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+.ListIteam{
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  justify-content: start;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 38vw;
+  height: 5vw;
+  background-color: white;
+}
+.eventNameBox{
+  width: 15vw;
+  font-size: 1.4vw;
+  
+}
+.timeTaken{
+  width: 15vw;
+  font-size: 2vw;
+}
+.activeOrNot{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+  
+  .base-timer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+  }
+  
+   */

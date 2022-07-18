@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="timer.css">
+    <!-- <link href="../../nav.html" rel="import" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    <script> 
+    $(function(){
+      $("#includedContent").load("../../nav.html"); 
+    });
+    </script> 
+  </head> 
+
+</head>
+
+<body>
+    <div id="includedContent"></div>
+      <div class="container">
+        <div class="timerclock">
+            <div class="timerclockbox">
+                <div class="statusLogo">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player class="timer-animation" src="https://assets2.lottiefiles.com/packages/lf20_i0mxtka6.json"  background="transparent"  speed="1"  style="width: 8vw; height: 8vw;"  loop  autoplay></lottie-player>
+                </div>
+                <div class="time">
+                    <div class="time-hour timerfont timeSize ">00</div>
+                    <div class="time-divider timerfont ">:</div>
+                    <div class="time-min timerfont timeSize">00</div>
+                    <div class="time-divider timerfont ">:</div>
+                    <div class="time-sec timerfont timeSize">00</div>
+                    <div class="editTextArea">
+                        <div class="timeSetBox">
+                            <div class="counterInput">
+                                <input id="inputhour" maxlength="2" placeholder="00" type="text" oninput="
+                                this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
+                                if(parseInt(this.value) > 99) {
+                                    this.value = 99;
+                                }
+                                var timeHour = document.querySelector('.time-hour')
+                                timeHour.innerHTML = this.value
+                                "> 
+                            </div>
+                            <div class="spacer">:</div>
+                            <div class="counterInput">
+                                <input id="inputMin" maxlength="2" placeholder="00" type="text" oninput="
+                                    this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
+                                    if(parseInt(this.value) > 59) {
+                                        this.value = 59;
+                                    }
+                                    var timeMin = document.querySelector('.time-min')
+                                    timeMin.innerHTML = this.value
+                                    "> 
+                            </div>
+                            <div class="spacer">:</div>
+                            <div class="counterInput">
+                                <input id="inputSec" maxlength="2" placeholder="00" type="text" oninput="
+                                this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
+                                if(parseInt(this.value) > 59) {
+                                    this.value = 59;
+                                }
+                                var timeSec = document.querySelector('.time-sec')
+                                timeSec.innerHTML = this.value
+                                "> 
+                            </div>
+                        </div>
+                        <div class="eventName">
+                            <input id="inputname" maxlength="30" placeholder="Event Name" type="text"> 
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="blank"></div>
+            </div>
+            <div class="buttons">
+                <div class="buttomShape">
+                    <div class="start">
+
+                    </div>
+                </div>
+                <div class="buttomShape">
+                    <div class="reset">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><b>History</b>
+            <div class="list">
+            
+            </div>
+        </div>
+    </div>
+    <script src="timer.js"></script>
+</body>
+
+</html>
