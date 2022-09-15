@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.container1 {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container {
+  margin-top: 8vh;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+.team {
+  background-color: rgb(188 208 219);
+  border: 2px solid blanchedalmond;
+  width: 20rem;
+  height: 15rem;
+  margin: 2%;
+  position: relative;
+  transition: 0.6s ease-out;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  
+  background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+#team1{
+  background-image: url("image/sarvesh_dubey.png");
+}
+#team2{
+  background-image: url("image/priyanshu.png");
+}
+#team3{
+  background-image: url("image/naveen.png");
+}
+#team4{
+  background-image: url("image/nishan.png");
+}
+#team5{
+  background-image: url("image/sonu.png");
+}
+
+
+  
+
+.position {
+  position: relative;
+  bottom: 0;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(160px);
+  transition: .5s;
+  left: 10px;
+  display: block;
+ font-size: large;
+}
+.name{
+  position: relative;
+  bottom: 0;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(175px);
+  transition: .5s;
+  left: 10px;
+  display: block;
+  font-size: large;
+}
+
+.fab {
+  margin-left: 0.5vw;
+  cursor: pointer;
+}
+.fas {
+  margin-left: 0.3vw;
+  cursor: pointer;
+}
+
+/* web team data  */
+
+/* hover effects */
+.fab:hover {
+  font-size: x-large;
+}
+.fas:hover{
+  font-size: x-large;
+}
+.team:hover{
+  transform: translateY(10px);
+}
+.team:hover::before{
+  opacity: 1;
+}
+.team:hover .position {
+  opacity: 1;
+}
+.team:hover .name {
+  opacity: 1;
+}
+.team::before{
+content: '';
+position: absolute;
+top:0;
+left: 0;
+display: block;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top,#000,transparent);
+z-index:2;
+transition: 0.5s;
+opacity: 0;
+}
+
+
+/* responsive */
+@media screen and (max-width: 710px) {
+  .container1 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .team {
+    width: 80%;
+    margin: 2%;
+    position: relative;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  }
+  .fab {
+    margin-left: 2vw;
+    cursor: pointer;
+  }
+  .fas {
+    margin-left: 1vw;
+    cursor: pointer;
+  }
+}
