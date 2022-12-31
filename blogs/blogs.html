@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -48,20 +50,26 @@
           <div><a href="index.html"><img style="display: inline-block" src="images/EDC logo.png" alt="" width="265px" height="80px"></a></div>
           </div>
 
-          <div class="col-8 text-right">
+          <div class="col-8 text-right" style="display:flex; justify-content: end;">
             <nav class="site-navigation" role="navigation">
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block mb-0">
-                <li><a href="../index.html">Home</a></li>
+                <!-- <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Marketing & Ads</a></li>
                 <li><a href="#">Our Startups</a></li>
                 <li><a href="#">Finance</a></li>
                 <li><a href="#">Global Market</a></li>
-                <li><a href="#">Stock Market</a></li>
-                <!-- <li class="d-none d-lg-inline-block"><a href="#" class="js-search-toggle"><span class="icon-search"></span></a></li> -->
+                <li><a href="#">Stock Market</a></li> -->
+                <div class="backToHomePage">
+                    <button onclick="window.location.href = 'https://www.edciiest.ml'; " id="backToHomePage" >Back to HomePage</button>
+                </div>
               </ul>
             </nav>
             <a href="#" class="site-menu-toggle js-menu-toggle text-black d-inline-block d-lg-none"><span class="icon-menu h3"></span></a></div>
           </div>
+
+          <!-- <div class="backToHomePage">
+              <a href="https://www.edciiest.ml" style="color: white; display: inline-block; text-decoration: none;">Back to HomePage</a>
+          </div> -->
 
       </div>
     </header>
@@ -145,53 +153,42 @@
     </div>
 
 
-    <div class="site-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-4">
-            <h3 class="footer-heading mb-4">About Us</h3>
-            <p>Someone from edc will add About info</p>
-          </div>
-          <div class="col-md-3 ml-auto">
-            <!-- <h3 class="footer-heading mb-4">Navigation</h3> -->
-            <ul class="list-unstyled float-left mr-5">
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </ul>
-            <ul class="list-unstyled float-left">
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-
-
-            <div>
-              <a href="contact.html" target="_blank">
-              <h3 class="footer-heading mb-4">Connect With Us</h3></a>
-              <p>
-                <a href="https://www.facebook.com/edciiests" target="_blank"><span class="icon-facebook pt-2 pr-2 pb-2 pl-0"></span></a>
-                <a href="https://twitter.com/edc_iiests" target="_blank"><span class="icon-twitter p-2"></span></a>
-                <a href="https://www.instagram.com/edc.iiests/" target="_blank"><span class="icon-instagram p-2"></span></a>
-                <a href="#"><span class="icon-rss p-2"></span></a>
-                <a href="#"><span class="icon-envelope p-2"></span></a>
-              </p>
-            </div>
-          </div>
+    <div id="footer">
+   
+      <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.facebook.com/edciiests/" role="button"><i class="fab fa-facebook-f"></i></a>
+      
+            <!-- Twitter -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a> -->
+      
+            <!-- Google -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a> -->
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://instagram.com/edc.iiests?igshid=ZmVmZTY5ZGE=" role="button"><i class="fab fa-instagram"></i></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1"  target="_blank" href="https://www.linkedin.com/company/edciiests/" role="button"><i class="fab fa-linkedin-in"></i></a>
+      
+            <!-- Github -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a> -->
+          </section>
+          <!-- Section: Social media -->
         </div>
-        <div class="row">
-          <div class="col-12 text-center">
-            <p>
-              Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://edciiest.ml" target="_blank" >EDC
-              </p>
-          </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          &copy; 2023 Copyright:
+        All rights reserved | This Website is made with &#128150; by EDC
         </div>
-      </div>
-    </div>
+        <!-- Copyright -->
+      </footer>
 
   </div>
   <script>
