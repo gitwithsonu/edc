@@ -1,4 +1,33 @@
 /* Base */
+.backToHomePage{
+  background-color: rgb(54, 54, 233);
+  border-radius: 50px; 
+  width: 280px; 
+  height: 60px; 
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center; 
+  align-items: center;
+}
+/* .backToHomePage:hover{
+  cursor: pointer;
+} */
+
+
+#backToHomePage{
+  padding:0.6em 2em;
+  color:#fff;
+  background-color:#405bf8;
+  font-size:1.1em;
+  border:0;
+  cursor:pointer;
+  width: 280px; height: 60px; border-radius: 50px; color: white;
+  
+}
+
+
+
+
 body {
   line-height: 1.7;
   color: gray;
